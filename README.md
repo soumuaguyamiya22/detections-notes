@@ -22,11 +22,11 @@ These notes are that middle step written down, so the next rule is faster.
 
 The raw evidence comes from my triage tools: [macho-triage][macho] for the
 first static pass over Mach-O samples (load commands, embedded strings,
-persistence artifacts), and [phishkit-triage][phishkit] for the `.php` exfil
-endpoints that keep showing up in kits and that the macOS stagers reuse.
+embedded endpoints), and [plist-triage][plist] for the macOS launchd
+persistence — the LaunchAgent / LaunchDaemon jobs that keep those stagers resident.
 
 [macho]: https://github.com/soumuaguyamiya22/macho-triage
-[phishkit]: https://github.com/soumuaguyamiya22/phishkit-triage
+[plist]: https://github.com/soumuaguyamiya22/plist-triage
 
 ## Indicators
 

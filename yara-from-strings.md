@@ -52,10 +52,9 @@ behaviours that actually define the sample:
    sysadmin one-liner; sitting inside an unsigned Mach-O next to a fake password
    prompt, it isn't.
 
-The raw-IP `.php` endpoint is the third leg — the same exfil shape I see in
-[phishkit-triage][phishkit], where kits POST harvested creds to
-`http://<ip>/<name>.php`. I keep it as a regex, not a literal, because the host
-and filename rotate but the shape doesn't.
+The raw-IP `.php` endpoint is the third leg — a recurring exfil shape, a POST of
+harvested data to `http://<ip>/<name>.php`. I keep it as a regex, not a literal,
+because the host and filename rotate but the shape doesn't.
 
 ## The rule
 
